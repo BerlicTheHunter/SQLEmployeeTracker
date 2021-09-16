@@ -1,19 +1,14 @@
--- IF NOT EXISTS 
---    (
---      SELECT name FROM master.dbo.sysdatabases 
---      WHERE name = N'tracker_db'
---     );
-CREATE DATABASE tracker_db;
+CREATE DATABASE IF NOT EXISTS tracker_db;
 
 USE tracker_db;
 
-CREATE TABLE department (
+CREATE TABLE IF NOT EXISTS department (
   id INT AUTO_INCREMENT NOT NULL,
   department_name VARCHAR(30),
   PRIMARY KEY (id)
 );
 
-CREATE TABLE roles (
+CREATE TABLE IF NOT EXISTS roles (
   id INT AUTO_INCREMENT NOT NULL,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL(10,2) NOT NULL,
@@ -22,7 +17,7 @@ CREATE TABLE roles (
   FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
-CREATE TABLE employee (
+CREATE TABLE IF NOT EXISTS employee (
   id INT AUTO_INCREMENT NOT NULL,
   first_name VARCHAR(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,

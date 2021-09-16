@@ -1,0 +1,24 @@
+{
+  "name": "sqlemployeetracker",
+  "version": "1.0.0",
+  "description": "An employee tracker CLI tool using SQL, Node, and Inquirer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerlicTheHunter/SQLEmployeeTracker.git"
+  },
+  "author": "BerlicTheHunter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BerlicTheHunter/SQLEmployeeTracker/issues"
+  },
+  "homepage": "https://github.com/BerlicTheHunter/SQLEmployeeTracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.1.5",
+    "mysql2": "^2.3.0"
+  }
+}
