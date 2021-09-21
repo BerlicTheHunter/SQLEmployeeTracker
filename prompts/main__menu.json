@@ -1,0 +1,6 @@
+{
+  "type": "List",
+  "message": "What Would You Like To DO?",
+  "name": "mainMenu",
+  "List": ["View All Departments","View All Roles","View All Employees","Add A Department","Add A Role","Add An Employee","Update An Employee"]
+}

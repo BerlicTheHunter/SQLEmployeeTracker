@@ -1,10 +1,14 @@
+
+-- Uncomment and use only for debugging and emergencies 
+-- DROP DATABASE IF EXISTS tracker_db;
+
 CREATE DATABASE IF NOT EXISTS tracker_db;
 
 USE tracker_db;
 
 CREATE TABLE IF NOT EXISTS department (
   id INT AUTO_INCREMENT NOT NULL,
-  department_name VARCHAR(30),
+  department_name VARCHAR(30) UNIQUE,
   PRIMARY KEY (id)
 );
 
